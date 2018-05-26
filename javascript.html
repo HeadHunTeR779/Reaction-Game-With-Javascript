@@ -1,0 +1,66 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+    <style type="text/css">
+
+    #red
+    {
+      background-color: red;
+    }
+
+    #blue
+    {
+      background-color:blue;
+    }
+
+    #yellow
+    {
+      background-color:yellow;
+    }
+
+    .size
+    {
+      width: 200px;
+      height: 200px;
+      float : left;
+      margin-left: 40px;
+      margin-right: 40px;
+      border-radius: 100px;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="red" class="size"></div>
+    <div id="blue" class="size"></div>
+    <div id="yellow" class="size"></div>
+
+
+    <script type='text/javascript'>
+
+      document.getElementById("red").onclick = function()
+      {
+        document.getElementById("red").style.display = "none";
+      }
+
+      document.getElementById("blue").onclick = function()
+      {
+        document.getElementById("blue").style.display = "none";
+      }
+
+      document.getElementById("yellow").onclick = function()
+      {
+        document.getElementById("yellow").style.display = "none";
+      }
+
+    </script>
+
+  </body>
+
+</html>
