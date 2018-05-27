@@ -4,60 +4,28 @@
 
     <title>Javascript</title>
 
-    <style type="text/css">
-
-    #red
-    {
-      background-color: red;
-    }
-
-    #blue
-    {
-      background-color:blue;
-    }
-
-    #yellow
-    {
-      background-color:yellow;
-    }
-
-    .size
-    {
-      width: 200px;
-      height: 200px;
-      float : left;
-      margin-left: 40px;
-      margin-right: 40px;
-      border-radius: 100px;
-    }
-
-    </style>
 
   </head>
 
   <body>
 
-    <div id="red" class="size"></div>
-    <div id="blue" class="size"></div>
-    <div id="yellow" class="size"></div>
+    Traps are:
+    <input type="text" id="box"><br>
+    <button id="butt">Check Answer</button>
 
 
-    <script type='text/javascript'>
+    <script type="text/javascript">
 
-      document.getElementById("red").onclick = function()
-      {
-        document.getElementById("red").style.display = "none";
-      }
+    document.getElementById("butt").onclick = function()
+    {
+      var ans = document.getElementById("box").value;
 
-      document.getElementById("blue").onclick = function()
-      {
-        document.getElementById("blue").style.display = "none";
-      }
+      if(ans.toLowerCase() == "gay")
+        alert("Right Answer!");
+      else
+      alert("Get the fuck out fag!");
+    }
 
-      document.getElementById("yellow").onclick = function()
-      {
-        document.getElementById("yellow").style.display = "none";
-      }
 
     </script>
 
