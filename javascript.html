@@ -9,23 +9,33 @@
 
   <body>
 
-    Traps are:
-    <input type="text" id="box"><br>
-    <button id="butt">Check Answer</button>
+    How many fingersare you holding up?(1-10):
 
+    <select id="box">
+
+    </select>
+
+    <button id="butt">Answer</button>
 
     <script type="text/javascript">
 
-    document.getElementById("butt").onclick = function()
-    {
-      var ans = document.getElementById("box").value;
+      for(var j = 1;j<10; ++j)
+        document.getElementById("box").innerHTML += "<option>"+j+"</option>"
 
-      if(ans.toLowerCase() == "gay")
-        alert("Right Answer!");
-      else
-      alert("Get the fuck out fag!");
-    }
+      document.getElementById("butt").onclick = function()
+      {
+        var i = 1;
+        var guess = Math.floor(Math.random()*10 + 1);
 
+        while(document.getElementById("box").value != guess)
+        {
+          guess = Math.floor(Math.random()*10 + 1);
+          ++i;
+        }
+
+        alert("It took me " + i + " guesses.")
+
+      }
 
     </script>
 
