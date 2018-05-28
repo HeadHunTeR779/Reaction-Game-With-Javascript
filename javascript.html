@@ -2,42 +2,26 @@
 
   <head>
 
-    <title>Javascript</title>
+    <title>Javascript Reaction Tester Game</title>
 
 
   </head>
 
   <body>
 
-    How many fingersare you holding up?(1-10):
+    <h1> Test your Reflexes</h1>
 
-    <select id="box">
+    <p> Click on the figures as QUICKLY as possible !</p>
 
-    </select>
+    <div id="response">
+      <p>Your Reaction Time is:</p>
+    </div>
 
-    <button id="butt">Answer</button>
+    <div id="div1">
 
-    <script type="text/javascript">
+    </div>
 
-      for(var j = 1;j<10; ++j)
-        document.getElementById("box").innerHTML += "<option>"+j+"</option>"
-
-      document.getElementById("butt").onclick = function()
-      {
-        var i = 1;
-        var guess = Math.floor(Math.random()*10 + 1);
-
-        while(document.getElementById("box").value != guess)
-        {
-          guess = Math.floor(Math.random()*10 + 1);
-          ++i;
-        }
-
-        alert("It took me " + i + " guesses.")
-
-      }
-
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 
   </body>
 
